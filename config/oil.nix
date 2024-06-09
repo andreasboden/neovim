@@ -4,7 +4,7 @@
   };
 
   plugins.which-key.registrations = {
-    "<leader>e" = [ ["<cmd>Oil<CR>" "Explorer"] ];
+    "<leader>e" = [ [ "<cmd>Oil<CR>" "Explorer" ] ];
   };
 
 }

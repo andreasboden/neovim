@@ -1,7 +1,7 @@
 {
 
   plugins.fidget = {
-      enable = true;
+    enable = true;
     logger = {
       level = "warn"; # “off”, “error”, “warn”, “info”, “debug”, “trace”
       floatPrecision = 0.01; # Limit the number of decimals displayed for floats
@@ -24,7 +24,7 @@
         ''
           function(msg) return msg.lsp_client.name end
         '';
-      ignore = []; # List of LSP servers to ignore
+      ignore = [ ]; # List of LSP servers to ignore
       lsp = {
         progressRingbufSize = 0; # Configure the nvim's LSP progress ring buffer size
       };
@@ -97,7 +97,7 @@
       };
     };
   };
-   
+
 
   plugins.lsp = {
     enable = true;
@@ -114,6 +114,10 @@
         "K" = "hover";
       };
     };
+
+    onAttach = ''
+      	vim.cmd("autocmd BufWritePost <buffer> lua vim.lsp.buf.format()")
+    '';
 
     enabledServers = [
       {
@@ -151,7 +155,9 @@
       }
       {
         name = "nil_ls";
-        extraOptions = { };
+        extraOptions = {
+          settings.nil.formatting.command = [ "nixpkgs-fmt" ];
+        };
       }
       {
         name = "gleam";

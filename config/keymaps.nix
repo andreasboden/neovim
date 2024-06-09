@@ -193,8 +193,8 @@
 
 
   plugins.which-key.registrations = {
-    "<leader>c" = [ ["<cmd>Bdelete!<CR>" "Close buffer" { mode = "";    }] ];
-    "<leader>C" = [ ["<cmd>%bd|e#<CR>" "Close all buffers" { mode = ""; }] ];
+    "<leader>c" = [ [ "<cmd>Bdelete!<CR>" "Close buffer" { mode = ""; } ] ];
+    "<leader>C" = [ [ "<cmd>%bd|e#<CR>" "Close all buffers" { mode = ""; } ] ];
   };
 
 }

@@ -14,5 +14,21 @@
     ./harpoon.nix
   ];
 
+  config = {
+    vimAlias = true;
+
+    options = {
+      relativenumber = true;
+    };
+
+    autoCmd = [
+      {
+        event = "TextYankPost";
+        pattern = "*";
+        command = "silent!lua require('vim.highlight').on_yank({higroup = 'Visual', timeout = 200})";
+      }
+    ];
+  };
+
 
 }
