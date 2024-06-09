@@ -14,4 +14,14 @@
       };
     };
   };
+
+  plugins.which-key.registrations = {
+    "<leader>ha" = "Harpoon add file";
+    "<C-e>" = "Harpoon menu";
+    "<leader>1" = "Harpoon 1";
+    "<leader>2" = "Harpoon 2";
+    "<leader>3" = "Harpoon 3";
+    "<leader>4" = "Harpoon 4";
+  };
+
 }

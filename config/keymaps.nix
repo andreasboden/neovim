@@ -4,7 +4,6 @@
   globals.maplocalleader = " ";
 
 
-
   keymaps = [
     # Disable space key
     {
@@ -190,83 +189,12 @@
         desc = "Move selected lines up";
       };
     }
-
-    {
-      mode = "";
-      key = "a";
-      action = "<cmd>Alpha<CR>";
-      options = {
-        silent = true;
-        noremap = true;
-        nowait = true;
-        desc = "Open Alpha";
-      };
-    }
-
-    {
-      mode = "";
-      key = "e";
-      action = "<cmd>Oil<CR>";
-      options = {
-        silent = true;
-        noremap = true;
-        nowait = true;
-        desc = "Open file explorer";
-      };
-    }
-
-    {
-      mode = "";
-      key = "c";
-      action = "<cmd>Bdelete!<CR>";
-      options = {
-        silent = true;
-        noremap = true;
-        nowait = true;
-        desc = "Close buffer";
-      };
-    }
-
-    {
-      mode = "";
-      key = "C";
-      action = "<cmd>%bd|e#<CR>";
-    }
-
-    {
-      mode = "";
-      key = "f";
-      action = "<cmd>Telescope find_files<CR>";
-      options = {
-        silent = true;
-        noremap = true;
-        nowait = true;
-        desc = "Find files";
-      };
-    }
-
-    {
-      mode = "";
-      key = "F";
-      action = "<cmd>Telescope live_grep<CR>";
-      options = {
-        silent = true;
-        noremap = true;
-        nowait = true;
-        desc = "Find in files";
-      };
-    }
-
   ];
 
 
   plugins.which-key.registrations = {
-    "<leader>a" = "Alpha";
-    "<leader>e" = "Explorer";
-    "<leader>c" = "Close buffer";
-    "<leader>C" = "Close all buffers";
-    "<leader>f" = "Find files";
-    "<leader>F" = "Find in files";
+    "<leader>c" = [ ["<cmd>Bdelete!<CR>" "Close buffer" { mode = "";    }] ];
+    "<leader>C" = [ ["<cmd>%bd|e#<CR>" "Close all buffers" { mode = ""; }] ];
   };
 
 }
