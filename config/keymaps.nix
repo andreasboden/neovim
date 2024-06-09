@@ -194,7 +194,7 @@
 
   plugins.which-key.registrations = {
     "<leader>c" = [ [ "<cmd>Bdelete!<CR>" "Close buffer" { mode = ""; } ] ];
-    "<leader>C" = [ [ "<cmd>.+,$bdelete<CR>" "Close other buffers" { mode = ""; } ] ];
+    "<leader>C" = [ [ "<cmd>BufferLineCloseOthers<CR>" "Close other buffers" { mode = ""; } ] ];
   };
 
 }
