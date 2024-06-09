@@ -98,6 +98,17 @@
     };
   };
 
+  plugins.none-ls = {
+    enable = true;
+    enableLspFormat = true;
+    sources.formatting.prettier = {
+      enable = true;
+      disableTsServerFormatter = true;
+    };
+  };
+
+  plugins.lsp-format.enable = true;
+
 
   plugins.lsp = {
     enable = true;
@@ -122,9 +133,6 @@
     enabledServers = [
       {
         name = "tsserver";
-        capabilities = {
-          documentFormattingProvider = false;
-        };
         extraOptions = {
           filetypes = [ "javascript" "javascriptreact" "typescript" "typescriptreact" ];
         };
