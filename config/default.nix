@@ -21,35 +21,35 @@
     vimAlias = true;
 
     opts = {
-    backup = false;
-	clipboard = "unnamedplus";
-	fileencoding = "utf-8";
-	hlsearch  = true;
-	ignorecase = true;
-	conceallevel = 0;
-	mouse = "a";
-	showtabline = 2;
-	smartcase = true;
-	smartindent = true;
-	splitbelow = true;
-	splitright = true;
-	swapfile = false;
-	timeoutlen = 300;
-	updatetime = 300;
-	undofile = true;
-	expandtab = true;
-	shiftwidth = 2;
-	tabstop = 2;
-	writebackup = false;
-	number = true;
-	       relativenumber = true;
-	numberwidth = 4;
-	cursorline = true;
-	signcolumn = "yes";
-	wrap = false;
-	linebreak = false;
-	scrolloff = 8;
-	sidescrolloff = 8;
+      backup = false;
+      clipboard = "unnamedplus";
+      fileencoding = "utf-8";
+      hlsearch = true;
+      ignorecase = true;
+      conceallevel = 0;
+      mouse = "a";
+      showtabline = 2;
+      smartcase = true;
+      smartindent = true;
+      splitbelow = true;
+      splitright = true;
+      swapfile = false;
+      timeoutlen = 300;
+      updatetime = 300;
+      undofile = true;
+      expandtab = true;
+      shiftwidth = 2;
+      tabstop = 2;
+      writebackup = false;
+      number = true;
+      relativenumber = true;
+      numberwidth = 4;
+      cursorline = true;
+      signcolumn = "yes";
+      wrap = false;
+      linebreak = false;
+      scrolloff = 8;
+      sidescrolloff = 8;
     };
 
     autoCmd = [
@@ -60,6 +60,4 @@
       }
     ];
   };
-
-
 }
