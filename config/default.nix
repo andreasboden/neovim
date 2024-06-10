@@ -17,6 +17,7 @@
     ./completion/lspkind.nix
     ./autoclose.nix
     ./auto-session.nix
+    ./git.nix
   ];
 
   config = {
