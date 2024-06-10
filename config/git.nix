@@ -1,11 +1,12 @@
 {
 
-  plugins.lazygit = {
+  plugins.neogit = {
     enable = true;
   };
 
   plugins.which-key.registrations = {
     "<leader>g" = "Git";
-    "<leader>gl" = [ [ "<cmd>LazyGit<CR>" "LazyGit" { mode = ""; } ] ];
+    "<leader>gg" = [ [ "<cmd>lua require('neogit').open()<CR>" "UI" { mode = ""; } ] ];
+    "<leader>gc" = [ [ "<cmd>lua require('neogit').open({ \"commit\" })<CR>" "Commit" { mode = ""; } ] ];
   };
 }
