@@ -130,51 +130,29 @@
       	vim.cmd("autocmd BufWritePost <buffer> lua vim.lsp.buf.format()")
     '';
 
-    enabledServers = [
-      {
-        name = "tsserver";
-        extraOptions = {
-          filetypes = [ "javascript" "javascriptreact" "typescript" "typescriptreact" ];
-        };
-      }
-      {
-        name = "jsonls";
-        extraOptions = { };
-      }
-      {
-        name = "tailwindcss";
-        extraOptions = { };
-      }
-      {
-        name = "svelte";
-        extraOptions = { };
-      }
-      {
-        name = "html";
-        extraOptions = { };
-      }
-      {
-        name = "graphql";
-        extraOptions = { };
-      }
-      {
-        name = "rust_analyzer";
-        extraOptions = { };
-      }
-      {
-        name = "nil_ls";
+    servers = {
+      tsserver = {
+        enable = true;
+        filetypes = [ "javascript" "javascriptreact" "typescript" "typescriptreact" ];
+      };
+      tailwindcss = { enable = true; };
+      jsonls = { enable = true; };
+      html = { enable = true; };
+      graphql = { enable = true; };
+      rust-analyzer = {
+        enable = true;
+        installRustc = true;
+        installCargo = true;
+      };
+      nil-ls = {
+        enable = true;
         extraOptions = {
           settings.nil.formatting.command = [ "nixpkgs-fmt" ];
         };
-      }
-      {
-        name = "gleam";
-        extraOptions = { };
-      }
-      {
-        name = "gopls";
-        extraOptions = { };
-      }
-    ];
+      };
+      gleam = { enable = true; };
+      gopls = { enable = true; };
+      svelte = { enable = true; };
+    };
   };
 }

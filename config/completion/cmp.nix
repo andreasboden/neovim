@@ -1,6 +1,7 @@
 {
 
   plugins = {
+    luasnip = { enable = true; };
     cmp-nvim-lsp = { enable = true; }; # lsp
     cmp-buffer = { enable = true; };
     copilot-cmp = { enable = true; }; # copilot suggestions
