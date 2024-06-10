@@ -160,8 +160,8 @@
     "<leader>l" = "LSP";
     "<leader>la" = [ [ "<cmd>lua vim.lsp.buf.code_action()<cr>" "Code Action" ] ];
     "<leader>ll" = [ [ "<cmd>lua vim.lsp.codelens.run()<cr>" "Codelens" ] ];
-    "<leader>ld" = [ [ "<cmd>telescope diagnostics<cr>" "Document diagnostics" ] ];
-    "<leader>lw" = [ [ "<cmd>telescope lsp_workspace_diagnostics<cr>" "Workspace diagnostics" ] ];
+    "<leader>ld" = [ [ "<cmd>Telescope diagnostics<cr>" "Document diagnostics" ] ];
+    "<leader>lw" = [ [ "<cmd>Telescope lsp_workspace_diagnostics<cr>" "Workspace diagnostics" ] ];
     "<leader>lj" = [ [ "<cmd>lua vim.diagnostic.goto_next { severity = vim.diagnostic.severity.ERROR }<cr>" "Next diagnostic" ] ];
     "<leader>lk" = [ [ "<cmd>lua vim.diagnostic.goto_prev { severity = vim.diagnostic.severity.ERROR }<cr>" "Prev diagnostic" ] ];
     "<leader>lr" = [ [ "<cmd>lua vim.lsp.buf.rename()<cr>" "Rename" ] ];
