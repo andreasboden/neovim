@@ -16,6 +16,7 @@
     ./completion/copilot.nix
     ./completion/lspkind.nix
     ./autoclose.nix
+    ./auto-session.nix
   ];
 
   config = {

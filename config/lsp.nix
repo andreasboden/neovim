@@ -157,6 +157,7 @@
   };
 
   plugins.which-key.registrations = {
+    "<leader>l" = "LSP";
     "<leader>la" = [ [ "<cmd>lua vim.lsp.buf.code_action()<cr>" "Code Action" ] ];
     "<leader>ll" = [ [ "<cmd>lua vim.lsp.codelens.run()<cr>" "Codelens" ] ];
     "<leader>ld" = [ [ "<cmd>telescope diagnostics<cr>" "Document diagnostics" ] ];

@@ -35,6 +35,7 @@ let
   };
 in
 {
+
   plugins.alpha = {
     enable = true;
     layout = [
