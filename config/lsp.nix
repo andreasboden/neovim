@@ -126,10 +126,6 @@
       };
     };
 
-    onAttach = ''
-      	vim.cmd("autocmd BufWritePost <buffer> lua vim.lsp.buf.format()")
-    '';
-
     servers = {
       tsserver = {
         enable = true;
