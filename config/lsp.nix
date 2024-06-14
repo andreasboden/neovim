@@ -141,23 +141,27 @@
   };
 
 
+  plugins.lsp-format = {
+    enable = true;
+  };
+
   plugins.none-ls = {
     enable = true;
-    enableLspFormat = false;
-    onAttach = ''
-      function(client, bufnr)
-          if client.supports_method "textDocument/formatting" then
-            vim.api.nvim_clear_autocmds { group = augroup, buffer = bufnr }
-            vim.api.nvim_create_autocmd("BufWritePre", {
-              group = augroup,
-              buffer = bufnr,
-              callback = function()
-                vim.lsp.buf.format { bufnr = bufnr }
-              end,
-            })
-          end
-        end
-    '';
+    enableLspFormat = true;
+    # onAttach = ''
+    #   function(client, bufnr)
+    #       if client.supports_method "textDocument/formatting" then
+    #         vim.api.nvim_clear_autocmds { group = augroup, buffer = bufnr }
+    #         vim.api.nvim_create_autocmd("BufWritePre", {
+    #           group = augroup,
+    #           buffer = bufnr,
+    #           callback = function()
+    #             vim.lsp.buf.format { bufnr = bufnr }
+    #           end,
+    #         })
+    #       end
+    #     end
+    # '';
     sources.formatting.prettier = {
       enable = true;
       disableTsServerFormatter = true;
@@ -168,6 +172,7 @@
     "<leader>l" = "LSP";
     "<leader>la" = [ [ "<cmd>lua vim.lsp.buf.code_action()<cr>" "Code Action" ] ];
     "<leader>ll" = [ [ "<cmd>lua vim.lsp.codelens.run()<cr>" "Codelens" ] ];
+    "<leader>lf" = [ [ "<cmd>lua vim.lsp.buf.format()<cr>" "Format" ] ];
     "<leader>ld" = [ [ "<cmd>Telescope diagnostics<cr>" "Document diagnostics" ] ];
     "<leader>lw" = [ [ "<cmd>Telescope lsp_workspace_diagnostics<cr>" "Workspace diagnostics" ] ];
     "<leader>lj" = [ [ "<cmd>lua vim.diagnostic.goto_next { severity = vim.diagnostic.severity.ERROR }<cr>" "Next diagnostic" ] ];
