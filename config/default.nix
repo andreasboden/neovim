@@ -1,6 +1,7 @@
 {
   # Import all your configuration modules here
   imports = [
+    ./modules
     ./colorscheme.nix
     ./keymaps.nix
     ./bufferline.nix
@@ -18,6 +19,7 @@
     ./autoclose.nix
     ./auto-session.nix
     ./git.nix
+    ./surround.nix
   ];
 
   config = {
