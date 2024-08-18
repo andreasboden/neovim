@@ -18,7 +18,7 @@
   plugins.which-key.registrations = {
     "<leader>h" = "Harpoon";
     "<leader>ha" = "Add file";
-    "<C-e>" = "Harpoon menu";
+    "<leader>hm" = "Harpoon menu";
     "1" = "Harpoon 1";
     "2" = "Harpoon 2";
     "3" = "Harpoon 3";
