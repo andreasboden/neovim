@@ -5,7 +5,7 @@
     keymapsSilent = true;
     keymaps = {
       addFile = "<leader>ha";
-      toggleQuickMenu = "<C-e>";
+      toggleQuickMenu = "<leader>hm";
       navFile = {
         "1" = "1";
         "2" = "2";
@@ -15,14 +15,37 @@
     };
   };
 
-  plugins.which-key.registrations = {
-    "<leader>h" = "Harpoon";
-    "<leader>ha" = "Add file";
-    "<leader>hm" = "Harpoon menu";
-    "1" = "Harpoon 1";
-    "2" = "Harpoon 2";
-    "3" = "Harpoon 3";
-    "4" = "Harpoon 4";
-  };
+
+  plugins.which-key.settings.spec = [
+    {
+      __unkeyed-1 = "<leader>h";
+      desc = "Harpoon";
+    }
+    {
+      __unkeyed-1 = "<leader>ha";
+      desc = "Add file";
+    }
+    {
+      __unkeyed-1 = "<leader>hm";
+      desc = "Show menu";
+    }
+    {
+      __unkeyed-1 = "1";
+      desc = "Harpoon 1";
+    }
+    {
+      __unkeyed-1 = "2";
+      desc = "Harpoon 2";
+    }
+    {
+      __unkeyed-1 = "3";
+      desc = "Harpoon 3";
+    }
+    {
+      __unkeyed-1 = "4";
+      desc = "Harpoon 4";
+    }
+  ];
+
 
 }

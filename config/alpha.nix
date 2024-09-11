@@ -131,7 +131,11 @@ in
     ];
   };
 
-  plugins.which-key.registrations = {
-    "<leader>a" = [ [ "<cmd>Alpha<CR>" "Open alpha" ] ];
-  };
+  plugins.which-key.settings.spec = [
+    {
+      __unkeyed-1 = "<leader>a";
+      __unkeyed-2 = "<cmd>Alpha<CR>";
+      desc = "Open alpha";
+    }
+  ];
 }

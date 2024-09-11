@@ -14,8 +14,13 @@
     };
   };
 
-  plugins.which-key.registrations = {
-    "<leader>e" = [ [ "<cmd>Oil<CR>" "Explorer" ] ];
-  };
+
+  plugins.which-key.settings.spec = [
+    {
+      __unkeyed-1 = "<leader>e";
+      __unkeyed-2 = "<cmd>Oil<CR>";
+      desc = "Explorer";
+    }
+  ];
 
 }

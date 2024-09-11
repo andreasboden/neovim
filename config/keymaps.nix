@@ -192,9 +192,17 @@
   ];
 
 
-  plugins.which-key.registrations = {
-    "<leader>c" = [ [ "<cmd>Bdelete!<CR>" "Close buffer" { mode = ""; } ] ];
-    "<leader>C" = [ [ "<cmd>BufferLineCloseOthers<CR>" "Close other buffers" { mode = ""; } ] ];
-  };
+  plugins.which-key.settings.spec = [
+    {
+      __unkeyed-1 = "<leader>c";
+      __unkeyed-2 = "<cmd>bd<CR>";
+      desc = "Close buffer";
+    }
+    {
+      __unkeyed-1 = "<leader>C";
+      __unkeyed-2 = "<cmd>BufferLineCloseOthers<CR>";
+      desc = "Close other buffers";
 
+    }
+  ];
 }

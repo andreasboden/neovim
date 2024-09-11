@@ -119,6 +119,9 @@
         enable = true;
         filetypes = [ "javascript" "javascriptreact" "typescript" "typescriptreact" ];
       };
+      roc_ls = {
+        enable = true;
+      };
       tailwindcss = { enable = true; };
       jsonls = { enable = true; };
       html = { enable = true; };
@@ -155,16 +158,56 @@
     };
   };
 
-  plugins.which-key.registrations = {
-    "<leader>l" = "LSP";
-    "<leader>la" = [ [ "<cmd>lua vim.lsp.buf.code_action()<cr>" "Code Action" ] ];
-    "<leader>ll" = [ [ "<cmd>lua vim.lsp.codelens.run()<cr>" "Codelens" ] ];
-    "<leader>lf" = [ [ "<cmd>lua vim.lsp.buf.format()<cr>" "Format" ] ];
-    "<leader>ld" = [ [ "<cmd>Telescope diagnostics<cr>" "Document diagnostics" ] ];
-    "<leader>lw" = [ [ "<cmd>Telescope lsp_workspace_diagnostics<cr>" "Workspace diagnostics" ] ];
-    "<leader>lj" = [ [ "<cmd>lua vim.diagnostic.goto_next { severity = vim.diagnostic.severity.ERROR }<cr>" "Next diagnostic" ] ];
-    "<leader>lk" = [ [ "<cmd>lua vim.diagnostic.goto_prev { severity = vim.diagnostic.severity.ERROR }<cr>" "Prev diagnostic" ] ];
-    "<leader>lr" = [ [ "<cmd>lua vim.lsp.buf.rename()<cr>" "Rename" ] ];
-    "<leader>lR" = [ [ "<cmd>Telescope lsp_references<cr>" "References" ] ];
-  };
+  plugins.which-key.settings.spec = [
+    {
+      __unkeyed-1 = "<leader>l";
+      desc = "LSP";
+    }
+    {
+      __unkeyed-1 = "<leader>la";
+      __unkeyed-2 = "<cmd>lua vim.lsp.buf.code_action()<cr>";
+      desc = "Code action";
+    }
+    {
+      __unkeyed-1 = "<leader>ll";
+      __unkeyed-2 = "<cmd>lua vim.lsp.codelens.run()<cr>";
+      desc = "Codelens";
+    }
+    {
+      __unkeyed-1 = "<leader>lf";
+      __unkeyed-2 = "<cmd>lua vim.lsp.buf.format()<cr>";
+      desc = "Format";
+    }
+    {
+      __unkeyed-1 = "<leader>ld";
+      __unkeyed-2 = "<cmd>Telescope diagnostics<cr>";
+      desc = "Document diagnostics";
+    }
+    {
+      __unkeyed-1 = "<leader>lw";
+      __unkeyed-2 = "<cmd>Telescope lsp_workspace_diagnostics<cr>";
+      desc = "Workspace diagnostics";
+    }
+    {
+      __unkeyed-1 = "<leader>lj";
+      __unkeyed-2 = "<cmd>lua vim.diagnostic.goto_next { severity = vim.diagnostic.severity.ERROR }<cr>";
+      desc = "Next diagnostic";
+    }
+    {
+      __unkeyed-1 = "<leader>lk";
+      __unkeyed-2 = "<cmd>lua vim.diagnostic.goto_prev { severity = vim.diagnostic.severity.ERROR }<cr>";
+      desc = "Prev diagnostic";
+    }
+    {
+      __unkeyed-1 = "<leader>lr";
+      __unkeyed-2 = "<cmd>lua vim.lsp.buf.rename()<cr>";
+      desc = "Rename";
+    }
+    {
+      __unkeyed-1 = "<leader>lR";
+      __unkeyed-2 = "<cmd>Telescope lsp_references<cr>";
+      desc = "References";
+    }
+  ];
+
 }
