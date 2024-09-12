@@ -16,11 +16,6 @@ in
         filetypes = { 'roc' },
         root_dir = require('lspconfig.util').find_git_ancestor,
       })
-
-      vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
-        pattern = { "*.roc" },
-        command = "set filetype=roc",
-      })
     '';
   };
 }
