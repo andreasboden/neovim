@@ -115,7 +115,7 @@
     };
 
     servers = {
-      tsserver = {
+      ts-ls = {
         enable = true;
         filetypes = [ "javascript" "javascriptreact" "typescript" "typescriptreact" ];
       };

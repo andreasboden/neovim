@@ -23,8 +23,13 @@
     ./comment.nix
   ];
 
+
   config = {
     vimAlias = true;
+
+    plugins.web-devicons = {
+      enable = true;
+    };
 
     opts = {
       backup = false;
