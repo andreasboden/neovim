@@ -1,4 +1,4 @@
-{
+{ pkgs, ... }: {
 
   plugins.fidget = {
     enable = true;
@@ -117,6 +117,7 @@
     servers = {
       ts-ls = {
         enable = true;
+        package = pkgs.nodePackages.typescript-language-server;
       };
       roc_ls = {
         enable = true;
