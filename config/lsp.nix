@@ -117,7 +117,6 @@
     servers = {
       ts-ls = {
         enable = true;
-        filetypes = [ "javascript" "javascriptreact" "typescript" "typescriptreact" ];
       };
       roc_ls = {
         enable = true;
