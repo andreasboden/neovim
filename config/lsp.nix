@@ -119,9 +119,6 @@
         enable = true;
         package = pkgs.nodePackages.typescript-language-server;
       };
-      roc_ls = {
-        enable = true;
-      };
       tailwindcss = { enable = true; };
       jsonls = { enable = true; };
       html = { enable = true; };
@@ -146,7 +143,7 @@
 
   plugins.lsp-format = {
     enable = true;
-    lspServersToEnable = [ "nil-ls" "gopls" "gleam" "rust-analyzer" ];
+    lspServersToEnable = [ "nil-ls" "ts-ls" "gopls" "gleam" "rust-analyzer" ];
   };
 
   plugins.none-ls = {
