@@ -117,7 +117,16 @@
     servers = {
       ts-ls = {
         enable = true;
-        package = pkgs.nodePackages.typescript-language-server;
+        filetypes = [
+          "javascript"
+          "javascriptreact"
+          "typescript"
+          "typescriptreact"
+        ];
+        settings = {
+          typescript.format.enable = false;
+          javascript.format.enable = false;
+        };
       };
       tailwindcss = { enable = true; };
       jsonls = { enable = true; };
@@ -143,7 +152,7 @@
 
   plugins.lsp-format = {
     enable = true;
-    lspServersToEnable = [ "nil-ls" "ts-ls" "gopls" "gleam" "rust-analyzer" ];
+    lspServersToEnable = [ "nil-ls" "gopls" "gleam" "rust-analyzer" ];
   };
 
   plugins.none-ls = {
@@ -151,7 +160,6 @@
     enableLspFormat = true;
     sources.formatting.prettier = {
       enable = true;
-      disableTsServerFormatter = true;
     };
   };
 
