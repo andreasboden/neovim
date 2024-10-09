@@ -128,6 +128,7 @@
           javascript.format.enable = false;
         };
       };
+      denols = { enable = true; };
       tailwindcss = { enable = true; };
       jsonls = { enable = true; };
       html = { enable = true; };
