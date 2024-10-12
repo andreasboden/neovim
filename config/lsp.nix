@@ -117,18 +117,16 @@
     servers = {
       ts-ls = {
         enable = true;
-        filetypes = [
-          "javascript"
-          "javascriptreact"
-          "typescript"
-          "typescriptreact"
-        ];
+        rootDir = "require 'lspconfig.util'.root_pattern('tsconfig.json', 'jsconfig.json', 'package.json')";
         settings = {
           typescript.format.enable = false;
           javascript.format.enable = false;
         };
       };
-      denols = { enable = true; };
+      denols = {
+        enable = true;
+        rootDir = "require 'lspconfig.util'.root_pattern('deno.json', 'deno.jsonc')";
+      };
       tailwindcss = { enable = true; };
       jsonls = { enable = true; };
       html = { enable = true; };
