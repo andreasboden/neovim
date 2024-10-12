@@ -115,17 +115,20 @@
     };
 
     servers = {
+      denols = {
+        enable = true;
+        rootDir = "require 'lspconfig.util'.root_pattern('deno.json', 'deno.jsonc')";
+      };
       ts-ls = {
         enable = true;
         rootDir = "require 'lspconfig.util'.root_pattern('tsconfig.json', 'jsconfig.json', 'package.json')";
+        extraOptions = {
+          single_file_support = false;
+        };
         settings = {
           typescript.format.enable = false;
           javascript.format.enable = false;
         };
-      };
-      denols = {
-        enable = true;
-        rootDir = "require 'lspconfig.util'.root_pattern('deno.json', 'deno.jsonc')";
       };
       tailwindcss = { enable = true; };
       jsonls = { enable = true; };
