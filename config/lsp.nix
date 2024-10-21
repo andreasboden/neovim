@@ -119,6 +119,9 @@
         enable = true;
         rootDir = "require 'lspconfig.util'.root_pattern('deno.json', 'deno.jsonc')";
       };
+      sourcekit = {
+        enable = true;
+      };
       ts-ls = {
         enable = true;
         rootDir = "require 'lspconfig.util'.root_pattern('tsconfig.json', 'jsconfig.json', 'package.json')";
