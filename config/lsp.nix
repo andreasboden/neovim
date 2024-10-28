@@ -119,6 +119,9 @@
         enable = true;
         rootDir = "require 'lspconfig.util'.root_pattern('deno.json', 'deno.jsonc')";
       };
+      elixirls = {
+        enable = true;
+      };
       zls = {
         enable = true;
       };
