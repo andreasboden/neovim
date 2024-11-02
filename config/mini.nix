@@ -106,7 +106,16 @@
   plugins.which-key.settings.spec = [
     {
       __unkeyed-1 = "<leader>e";
-      __unkeyed-2 = "<cmd>:lua MiniFiles.open()<CR>";
+      __unkeyed-2.__raw = ''
+        function()
+          local MiniFiles = require("mini.files")
+          local _ = MiniFiles.close()
+            or MiniFiles.open(vim.api.nvim_buf_get_name(0), false)
+          vim.defer_fn(function()
+            MiniFiles.reveal_cwd()
+          end, 30)
+        end
+      '';
       desc = "Explorer";
     }
     {
