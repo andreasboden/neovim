@@ -195,7 +195,7 @@
   plugins.which-key.settings.spec = [
     {
       __unkeyed-1 = "<leader>c";
-      __unkeyed-2 = "<cmd>bd<CR>";
+      __unkeyed-2 = "<cmd>bd!<CR>";
       desc = "Close buffer";
     }
     {
