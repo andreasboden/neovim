@@ -1,6 +1,11 @@
 {
 
 
+
+  plugins.ts-context-commentstring = {
+    enable = true;
+  };
+
   plugins.mini = {
     enable = true;
     modules = {
