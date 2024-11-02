@@ -31,7 +31,7 @@
       };
       files = {
         enable = true;
-        window = {
+        windows = {
           preview = true;
         };
         mappings = {
