@@ -32,6 +32,10 @@
 
       pick = {
         enable = true;
+
+        options = {
+          content_from_bottom = true;
+        };
       };
 
 
