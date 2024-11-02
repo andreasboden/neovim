@@ -31,6 +31,9 @@
       };
       files = {
         enable = true;
+        window = {
+          preview = true;
+        };
         mappings = {
           close = "q";
           go_in = "l";
