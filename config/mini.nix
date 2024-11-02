@@ -11,6 +11,26 @@
           textObject = "gc";
         };
       };
+      indentscope = {
+        enable = true;
+      };
+      jump = {
+        enable = true;
+      };
+      pairs = {
+        enable = true;
+      };
+      tabline = {
+        enable = true;
+      };
+      starter = {
+        enable = true;
+      };
+      sessions = {
+        enable = true;
+        autoread = true;
+        autowrite = true;
+      };
       files = {
         enable = true;
         mappings = {

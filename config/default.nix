@@ -4,8 +4,8 @@
     ./modules
     ./colorscheme.nix
     ./keymaps.nix
-    ./bufferline.nix
-    ./alpha.nix
+    # ./bufferline.nix
+    # ./alpha.nix
     ./which-key.nix
     # ./oil.nix
     ./mini.nix
@@ -17,11 +17,8 @@
     ./completion/cmp.nix
     ./completion/copilot.nix
     ./completion/lspkind.nix
-    ./autoclose.nix
-    ./auto-session.nix
     ./git.nix
     ./surround.nix
-    # ./comment.nix
   ];
 
 
