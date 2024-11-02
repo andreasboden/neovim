@@ -21,7 +21,7 @@
     ./auto-session.nix
     ./git.nix
     ./surround.nix
-    ./comment.nix
+    # ./comment.nix
   ];
 
 

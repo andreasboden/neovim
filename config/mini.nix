@@ -4,6 +4,13 @@
   plugins.mini = {
     enable = true;
     modules = {
+      comment = {
+        mappings = {
+          comment = "gc";
+          comment_line = "gcc";
+          textObject = "gc";
+        };
+      };
       files = {
         enable = true;
         mappings = {
