@@ -4,6 +4,7 @@
     ./modules
     ./colorscheme.nix
     ./keymaps.nix
+    ./commentstring.nix
     # ./bufferline.nix
     # ./alpha.nix
     ./which-key.nix
