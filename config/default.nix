@@ -7,7 +7,8 @@
     ./bufferline.nix
     ./alpha.nix
     ./which-key.nix
-    ./oil.nix
+    # ./oil.nix
+    ./mini.nix
     ./telescope.nix
     ./treesitter.nix
     ./lualine.nix
