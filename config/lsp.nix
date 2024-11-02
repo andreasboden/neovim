@@ -2,7 +2,7 @@
 
 
 
-  plugins.mini.notify = {
+  plugins.mini.modules.notify = {
     enable = true;
   };
 
