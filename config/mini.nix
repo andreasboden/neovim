@@ -38,6 +38,10 @@
         };
       };
 
+      bufremove = {
+        enable = true;
+      };
+
 
       files = {
         enable = true;
