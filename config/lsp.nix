@@ -6,6 +6,15 @@
     enable = true;
   };
 
+  plugins.trouble = {
+    enable = true;
+    # keys = {
+    #   toggle = "<leader>lt";
+    #   previous = "<leader>lk";
+    #   next = "<leader>lj";
+    # };
+  };
+
   plugins.lsp = {
     enable = true;
     keymaps = {
@@ -102,22 +111,22 @@
     }
     {
       __unkeyed-1 = "<leader>ld";
-      __unkeyed-2 = "<cmd>Telescope diagnostics<cr>";
+      __unkeyed-2 = "<cmd>Trouble diagnostics toggle focus=true filter.buf=0<cr>";
       desc = "Document diagnostics";
     }
     {
       __unkeyed-1 = "<leader>lw";
-      __unkeyed-2 = "<cmd>Telescope lsp_workspace_diagnostics<cr>";
+      __unkeyed-2 = "<cmd>Trouble diagnostics toggle focus=true<cr>";
       desc = "Workspace diagnostics";
     }
     {
       __unkeyed-1 = "<leader>lj";
-      __unkeyed-2 = "<cmd>lua vim.diagnostic.goto_next { severity = vim.diagnostic.severity.ERROR }<cr>";
+      __unkeyed-2 = "<cmd>Trouble diagnostics next<cr>";
       desc = "Next diagnostic";
     }
     {
       __unkeyed-1 = "<leader>lk";
-      __unkeyed-2 = "<cmd>lua vim.diagnostic.goto_prev { severity = vim.diagnostic.severity.ERROR }<cr>";
+      __unkeyed-2 = "<cmd>Trouble diagnostics prev<cr>";
       desc = "Prev diagnostic";
     }
     {
@@ -127,7 +136,7 @@
     }
     {
       __unkeyed-1 = "<leader>lR";
-      __unkeyed-2 = "<cmd>Telescope lsp_references<cr>";
+      __unkeyed-2 = "<cmd>Trouble references toggle<cr>";
       desc = "References";
     }
   ];
