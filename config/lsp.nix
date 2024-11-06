@@ -8,6 +8,17 @@
 
   plugins.trouble = {
     enable = true;
+    settings = {
+      focus = true;
+      position = "right";
+      use_diagnostic_signs = true;
+      modes = {
+        diagnostics = {
+          auto_open = true;
+          auto_close = true;
+        };
+      };
+    };
     # keys = {
     #   toggle = "<leader>lt";
     #   previous = "<leader>lk";
