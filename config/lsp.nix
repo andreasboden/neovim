@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ ... }: {
 
 
 
@@ -51,6 +51,9 @@
         enable = true;
       };
       zls = {
+        enable = true;
+      };
+      bashls = {
         enable = true;
       };
       ts-ls = {
