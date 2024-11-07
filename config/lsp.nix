@@ -97,6 +97,9 @@
   plugins.none-ls = {
     enable = true;
     enableLspFormat = true;
+    sources.formatting.mix = {
+      enable = true;
+    };
     sources.formatting.prettier = {
       enable = true;
       disableTsServerFormatter = true;
