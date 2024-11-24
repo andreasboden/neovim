@@ -14,7 +14,7 @@
       use_diagnostic_signs = true;
       modes = {
         diagnostics = {
-          auto_open = true;
+          auto_open = false;
           auto_close = true;
         };
       };
