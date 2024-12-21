@@ -47,6 +47,9 @@
         enable = true;
         rootDir = "require 'lspconfig.util'.root_pattern('deno.json', 'deno.jsonc')";
       };
+      kotlin_language_server = {
+        enable = true;
+      };
       elixirls = {
         enable = true;
       };
