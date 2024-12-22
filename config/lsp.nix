@@ -10,8 +10,6 @@
     enable = true;
     settings = {
       focus = true;
-      position = "right";
-      use_diagnostic_signs = true;
       modes = {
         diagnostics = {
           auto_open = false;
@@ -59,7 +57,7 @@
       bashls = {
         enable = true;
       };
-      ts-ls = {
+      ts_ls = {
         enable = true;
         rootDir = "require 'lspconfig.util'.root_pattern('tsconfig.json', 'jsconfig.json', 'package.json')";
         extraOptions = {
@@ -74,12 +72,12 @@
       jsonls = { enable = true; };
       html = { enable = true; };
       graphql = { enable = true; };
-      rust-analyzer = {
+      rust_analyzer = {
         enable = true;
         installRustc = true;
         installCargo = true;
       };
-      nil-ls = {
+      nil_ls = {
         enable = true;
         extraOptions = {
           settings.nil.formatting.command = [ "nixpkgs-fmt" ];
@@ -94,7 +92,7 @@
 
   plugins.lsp-format = {
     enable = true;
-    lspServersToEnable = [ "nil-ls" "gopls" "gleam" "rust-analyzer" ];
+    lspServersToEnable = [ "nil_ls" "gopls" "gleam" "rust_analyzer" ];
   };
 
   plugins.none-ls = {
