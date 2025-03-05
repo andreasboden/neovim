@@ -45,6 +45,14 @@
         enable = true;
         rootDir = "require 'lspconfig.util'.root_pattern('deno.json', 'deno.jsonc')";
       };
+      pylsp = {
+        enable = true;
+        settings = {
+          plugins = {
+            black.enable = true;
+          };
+        };
+      };
       kotlin_language_server = {
         enable = true;
       };
