@@ -41,7 +41,6 @@
         cvs = false;
         "." = false;
       };
-      copilotNodeCommand = "node"; # Node.js version must be > 18.x
       serverOptsOverrides = { };
     };
   };
