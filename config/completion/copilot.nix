@@ -1,4 +1,4 @@
-{
+{ lib, pkgs, ... }: {
   plugins.copilot-lua = {
     enable = true;
     settings = {
@@ -31,16 +31,9 @@
         };
       };
       filetypes = {
-        yaml = false;
-        markdown = false;
-        help = false;
-        gitcommit = false;
-        gitrebase = false;
-        hgcommit = false;
-        svn = false;
-        cvs = false;
         "." = false;
       };
+      copilot_node_command = lib.getExe pkgs.nodejs;
       serverOptsOverrides = { };
     };
   };
