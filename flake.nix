@@ -10,7 +10,7 @@
   };
 
   outputs =
-    { nixvim, flake-parts, ... }@inputs:
+    { nixvim, flake-parts, nixpkgs, ... }@inputs:
     flake-parts.lib.mkFlake { inherit inputs; } {
       systems = [
         "x86_64-linux"
@@ -24,6 +24,7 @@
         let
           nixvimLib = nixvim.lib.${system};
           nixvim' = nixvim.legacyPackages.${system};
+          pkgs = import nixpkgs { system = system; config.allowUnfree = true; };
           nixvimModule = {
             inherit pkgs;
             module = import ./config; # import the module directly
@@ -39,6 +40,7 @@
             # Run `nix flake check .` to verify that your config is not broken
             default = nixvimLib.check.mkTestDerivationFromNixvimModule nixvimModule;
           };
+
 
           packages = {
             # Lets you run `nix run .` to start nixvim

@@ -1,4 +1,4 @@
-{
+{ lib, ... }: {
   # Import all your configuration modules here
   imports = [
     ./modules
@@ -22,8 +22,8 @@
     ./surround.nix
   ];
 
-
   config = {
+
     vimAlias = true;
 
     plugins.web-devicons = {
