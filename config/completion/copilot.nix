@@ -35,6 +35,9 @@
       };
       copilot_node_command = lib.getExe pkgs.nodejs;
       serverOptsOverrides = { };
+      server = {
+        type = "nodejs";
+      };
     };
   };
 }
