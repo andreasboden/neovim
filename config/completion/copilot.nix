@@ -36,7 +36,7 @@
       copilot_node_command = lib.getExe pkgs.nodejs;
       serverOptsOverrides = { };
       server = {
-        type = "nodejs";
+        custom_server_filepath = lib.getExe pkgs.copilot-language-server;
       };
     };
   };
