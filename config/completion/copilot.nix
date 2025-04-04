@@ -34,8 +34,9 @@
         "." = false;
       };
       copilot_node_command = lib.getExe pkgs.nodejs;
-      serverOptsOverrides = { };
+      copilot_model = "gpt-4o-copilot";
       server = {
+        type = "binary";
         custom_server_filepath = lib.getExe pkgs.copilot-language-server;
       };
     };
