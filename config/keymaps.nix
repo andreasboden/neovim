@@ -189,6 +189,23 @@
         desc = "Move selected lines up";
       };
     }
+
+    {
+      mode = "x";
+      key = "<leader>p";
+      action = "\"_dP";
+    }
+
+    {
+      mode = "n";
+      key = "yp";
+      action = "\"0p";
+    }
+    {
+      mode = "n";
+      key = "yp";
+      action = "\"0P";
+    }
   ];
 
 
