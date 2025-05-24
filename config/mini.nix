@@ -12,6 +12,9 @@
       indentscope = {
         enable = true;
       };
+      notify = {
+        enable = true;
+      };
       jump = {
         enable = true;
       };
@@ -23,6 +26,25 @@
       };
       starter = {
         enable = true;
+      };
+      bracketed = {
+        enable = true;
+        mappings = {
+          buffer = { suffix = "b"; };
+          comment = { suffix = "c"; };
+          conflict = { suffix = "x"; };
+          diagnostic = { suffix = "d"; };
+          file = { suffix = "f"; };
+          indent = { suffix = "i"; };
+          jump = { suffix = "j"; };
+          location = { suffix = "l"; };
+          oldfile = { suffix = "o"; };
+          quickfix = { suffix = "q"; };
+          treesitter = { suffix = "t"; };
+          undo = { suffix = "u"; };
+          window = { suffix = "w"; };
+          yank = { suffix = "y"; };
+        };
       };
       sessions = {
         enable = true;

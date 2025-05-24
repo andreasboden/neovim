@@ -1,11 +1,5 @@
 { ... }: {
 
-
-
-  plugins.mini.modules.notify = {
-    enable = true;
-  };
-
   plugins.trouble = {
     enable = true;
     settings = {
@@ -52,9 +46,6 @@
             black.enable = true;
           };
         };
-      };
-      kotlin_language_server = {
-        enable = true;
       };
       elixirls = {
         enable = true;
