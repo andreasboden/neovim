@@ -18,6 +18,9 @@
     # };
   };
 
+  plugins.parinfer-rust.enable = true;
+  plugins.conjure.enable = true;
+
   plugins.lsp = {
     enable = true;
     keymaps = {

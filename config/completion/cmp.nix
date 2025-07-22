@@ -72,6 +72,7 @@
           __raw = ''
             cmp.config.sources({
               {name = 'nvim_lsp'},
+              {name = 'conjure'},
               {name = 'copilot'},
               {name = 'path'},
               {name = 'luasnip'},
