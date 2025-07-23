@@ -42,6 +42,9 @@
         enable = true;
         rootDir = "require 'lspconfig.util'.root_pattern('deno.json', 'deno.jsonc')";
       };
+      clojure_lsp = {
+        enable = true;
+      };
       pylsp = {
         enable = true;
         settings = {
