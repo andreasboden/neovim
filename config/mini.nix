@@ -135,7 +135,7 @@
 
   plugins.which-key.settings.spec = [
     {
-      __unkeyed-1 = "<leader>e";
+      __unkeyed-1 = "<leader><leader>";
       __unkeyed-2.__raw = ''
         function()
           local MiniFiles = require("mini.files")
