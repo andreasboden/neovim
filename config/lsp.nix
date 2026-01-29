@@ -76,6 +76,7 @@
       tailwindcss = { enable = true; };
       jsonls = { enable = true; };
       html = { enable = true; };
+      eslint = { enable = true; };
       # graphql = { enable = true; };
       rust_analyzer = {
         enable = true;
