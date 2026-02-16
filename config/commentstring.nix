@@ -1,7 +1,7 @@
 {
   plugins.ts-context-commentstring = {
     enable = true;
-    languages = {
+    settings.languages = {
       javascript = {
         __default = "// %s";
         jsx_element = "{/* %s */}";
