@@ -18,9 +18,6 @@
     # };
   };
 
-  plugins.parinfer-rust.enable = true;
-  plugins.conjure.enable = true;
-
   plugins.lsp = {
     enable = true;
     keymaps = {
@@ -41,9 +38,6 @@
       denols = {
         enable = true;
         rootMarkers = [ "deno.json" "deno.jsonc" ];
-      };
-      clojure_lsp = {
-        enable = true;
       };
       pylsp = {
         enable = true;
