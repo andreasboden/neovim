@@ -71,6 +71,9 @@
       jsonls = { enable = true; };
       html = { enable = true; };
       eslint = { enable = true; };
+      biome = {
+        enable = true;
+      };
       # graphql = { enable = true; };
       rust_analyzer = {
         enable = true;
@@ -104,6 +107,9 @@
     sources.formatting.prettier = {
       enable = true;
       disableTsServerFormatter = true;
+    };
+    sources.formatting.biome = {
+      enable = true;
     };
   };
 
