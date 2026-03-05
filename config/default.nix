@@ -55,7 +55,7 @@
       relativenumber = true;
       numberwidth = 4;
       cursorline = true;
-      termguicolors = true;
+      termguicolors = false;
       signcolumn = "yes";
       wrap = false;
       linebreak = false;

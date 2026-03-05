@@ -2,6 +2,7 @@
   plugins.lualine = {
     enable = true;
     settings = {
+      options.theme = "16color";
       iconsEnabled = true;
       disabledFiletypes = {
         statusline = [

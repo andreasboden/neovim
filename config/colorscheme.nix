@@ -1,6 +1,6 @@
 {
   colorschemes.catppuccin = {
-    enable = true;
+    enable = false;
 
     settings = {
       transparent_background = true;
