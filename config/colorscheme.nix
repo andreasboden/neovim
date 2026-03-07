@@ -164,8 +164,8 @@ in
 
     # ── Treesitter ─────────────────────────────────────────────
     "@comment"                = { fg = p.dim;        italic = true; };
-    "@punctuation.bracket"    = { fg = p.dim; };
-    "@punctuation.delimiter"  = { fg = p.dim; };
+    "@punctuation.bracket"    = { fg = p.muted; };
+    "@punctuation.delimiter"  = { fg = p.muted; };
     "@punctuation.special"    = { fg = p.accent; };
     "@constant"               = { fg = p.terracotta; };
     "@constant.builtin"       = { fg = p.terracottaBright; };
@@ -203,12 +203,12 @@ in
     "@attribute"              = { fg = p.brand; };
     "@variable"               = { fg = p.fg; };
     "@variable.builtin"       = { fg = p.errBright; };
-    "@property"               = { fg = p.fg; };
-    "@field"                  = { fg = p.fg; };
+    "@property"               = { fg = p.dusk; };
+    "@field"                  = { fg = p.dusk; };
     "@tag"                    = { fg = p.err; };
     "@tag.attribute"          = { fg = p.brand; };
     "@tag.delimiter"          = { fg = p.dim; };
-    "@operator"               = { fg = p.fg; };
+    "@operator"               = { fg = p.dim; };
     "@text.title"             = { fg = p.brand; bold = true; };
     "@text.literal"           = { fg = p.ok; };
     "@text.uri"               = { fg = p.dusk; underline = true; };
