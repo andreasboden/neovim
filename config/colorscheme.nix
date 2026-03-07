@@ -18,6 +18,15 @@ let
     dusk      = "#6E9EBE"; # base0D — Functions, Headings
     twilight  = "#B882A0"; # base0E — Keywords, Storage
     clay      = "#A57854"; # base0F — Deprecated, Embedded Tags
+
+    # Bright variants (lightened builtins / emphasis)
+    errBright       = "#D98888";
+    terracottaBright = "#E0AD84";
+    brandBright     = "#F0C870";
+    okBright        = "#A8D49A";
+    accentBright    = "#78D8CC";
+    duskBright      = "#8FB8D4";
+    twilightBright  = "#CCA0B8";
   };
   none = "NONE";
 in
@@ -159,19 +168,19 @@ in
     "@punctuation.delimiter"  = { fg = p.dim; };
     "@punctuation.special"    = { fg = p.accent; };
     "@constant"               = { fg = p.terracotta; };
-    "@constant.builtin"       = { fg = p.terracotta; };
+    "@constant.builtin"       = { fg = p.terracottaBright; };
     "@constant.macro"         = { fg = p.terracotta; };
     "@string"                 = { fg = p.ok; };
-    "@string.escape"          = { fg = p.accent; };
-    "@string.regex"           = { fg = p.accent; };
-    "@string.special"         = { fg = p.accent; };
+    "@string.escape"          = { fg = p.accentBright; };
+    "@string.regex"           = { fg = p.accentBright; };
+    "@string.special"         = { fg = p.accentBright; };
     "@character"              = { fg = p.ok; };
     "@number"                 = { fg = p.terracotta; };
     "@boolean"                = { fg = p.terracotta; };
     "@float"                  = { fg = p.terracotta; };
     "@function"               = { fg = p.dusk; };
-    "@function.builtin"       = { fg = p.dusk; };
-    "@function.macro"         = { fg = p.twilight; };
+    "@function.builtin"       = { fg = p.duskBright; };
+    "@function.macro"         = { fg = p.twilightBright; };
     "@function.call"          = { fg = p.dusk; };
     "@method"                 = { fg = p.dusk; };
     "@method.call"            = { fg = p.dusk; };
@@ -180,20 +189,20 @@ in
     "@keyword"                = { fg = p.twilight; };
     "@keyword.function"       = { fg = p.twilight; };
     "@keyword.operator"       = { fg = p.twilight; };
-    "@keyword.return"         = { fg = p.twilight; };
+    "@keyword.return"         = { fg = p.twilightBright; };
     "@conditional"            = { fg = p.twilight; };
     "@repeat"                 = { fg = p.twilight; };
     "@label"                  = { fg = p.brand; };
     "@include"                = { fg = p.dusk; };
     "@exception"              = { fg = p.err; };
     "@type"                   = { fg = p.brand; };
-    "@type.builtin"           = { fg = p.brand; };
+    "@type.builtin"           = { fg = p.brandBright; };
     "@type.qualifier"         = { fg = p.twilight; };
     "@type.definition"        = { fg = p.brand; };
     "@namespace"              = { fg = p.fg; };
     "@attribute"              = { fg = p.brand; };
     "@variable"               = { fg = p.fg; };
-    "@variable.builtin"       = { fg = p.err; };
+    "@variable.builtin"       = { fg = p.errBright; };
     "@property"               = { fg = p.fg; };
     "@field"                  = { fg = p.fg; };
     "@tag"                    = { fg = p.err; };
