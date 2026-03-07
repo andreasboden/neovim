@@ -109,7 +109,7 @@ in
     DiagnosticUnderlineHint  = { sp = p.accent;   undercurl = true; };
 
     # ── Standard syntax ────────────────────────────────────────
-    Comment       = { fg = p.muted;     italic = true; };
+    Comment       = { fg = p.dim;       italic = true; };
     Constant      = { fg = p.terracotta; };
     String        = { fg = p.ok; };
     Character     = { fg = p.ok; };
@@ -154,7 +154,7 @@ in
     Todo          = { fg = p.brand;    bg = p.bg; bold = true; };
 
     # ── Treesitter ─────────────────────────────────────────────
-    "@comment"                = { fg = p.muted;      italic = true; };
+    "@comment"                = { fg = p.dim;        italic = true; };
     "@punctuation.bracket"    = { fg = p.dim; };
     "@punctuation.delimiter"  = { fg = p.dim; };
     "@punctuation.special"    = { fg = p.accent; };
