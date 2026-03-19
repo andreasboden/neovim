@@ -55,8 +55,8 @@ in
 
     # ── Cursor & Visual ────────────────────────────────────────
     Cursor        = { fg = p.bg;       bg = p.fg; };
-    Visual        = { bg = "#55482E"; };
-    VisualNOS     = { bg = "#55482E"; };
+    Visual        = { fg = p.bright;   bg = "#2A3A2A"; };
+    VisualNOS     = { fg = p.bright;   bg = "#2A3A2A"; };
 
     # ── Search & Match ─────────────────────────────────────────
     Search        = { fg = p.bg;       bg = p.brand; };
@@ -67,14 +67,14 @@ in
 
     # ── Pmenu (completion) ─────────────────────────────────────
     Pmenu         = { fg = p.fg;       bg = p.bgRaised; };
-    PmenuSel      = { fg = p.bright;   bg = "#55482E"; };
+    PmenuSel      = { fg = p.bright;   bg = "#2A3A2A"; };
     PmenuSbar     = { bg = p.selection; };
     PmenuThumb    = { bg = p.muted; };
 
     # ── Tabline ────────────────────────────────────────────────
     TabLine       = { fg = p.dim;      bg = p.bgRaised; };
     TabLineFill   = { bg = p.bg; };
-    TabLineSel    = { fg = p.fg;       bg = "#55482E"; bold = true; };
+    TabLineSel    = { fg = p.fg;       bg = "#2A3A2A"; bold = true; };
 
     # ── Statusline ─────────────────────────────────────────────
     StatusLine    = { fg = p.dim;      bg = p.bgRaised; };
@@ -231,23 +231,23 @@ in
     TelescopePromptNormal = { fg = p.fg;       bg = p.bgRaised; };
     TelescopePromptBorder = { fg = p.muted;    bg = p.bgRaised; };
     TelescopePromptTitle  = { fg = p.brand;    bg = p.bgRaised; bold = true; };
-    TelescopeSelection    = { bg = "#55482E"; };
+    TelescopeSelection    = { bg = "#2A3A2A"; };
     TelescopeMatching     = { fg = p.brand;    bold = true; };
 
     # ── Mini ───────────────────────────────────────────────────
     MiniPickNormal     = { fg = p.fg;    bg = p.bg; };
     MiniPickBorder     = { fg = p.muted; bg = p.bg; };
     MiniPickPrompt     = { fg = p.brand; bold = true; };
-    MiniPickMatchCurrent = { fg = p.brand; bg = "#55482E"; bold = true; };
-    MiniPickMatchMarked  = { fg = p.accent; bg = "#55482E"; };
+    MiniPickMatchCurrent = { fg = p.brand; bg = "#2A3A2A"; bold = true; };
+    MiniPickMatchMarked  = { fg = p.accent; bg = "#2A3A2A"; };
     MiniPickMatchRanges  = { fg = p.brand; };
     MiniStarterHeader  = { fg = p.brand; bold = true; };
     MiniStarterFooter  = { fg = p.muted; italic = true; };
-    MiniStarterCurrent = { fg = p.fg;    bg = "#55482E"; };
+    MiniStarterCurrent = { fg = p.fg;    bg = "#2A3A2A"; };
     MiniStarterItem    = { fg = p.dim; };
     MiniStarterQuery   = { fg = p.brand; bold = true; };
     MiniIndentscopeSymbol = { fg = p.selection; };
-    MiniTablineCurrent    = { fg = p.fg;    bg = "#55482E"; bold = true; };
+    MiniTablineCurrent    = { fg = p.fg;    bg = "#2A3A2A"; bold = true; };
     MiniTablineVisible    = { fg = p.dim;   bg = p.bgRaised; };
     MiniTablineHidden     = { fg = p.muted; bg = p.bgRaised; };
     MiniTablineFill       = { bg = p.bg; };
