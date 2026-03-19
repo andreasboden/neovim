@@ -238,7 +238,9 @@ in
     MiniPickNormal     = { fg = p.fg;    bg = p.bg; };
     MiniPickBorder     = { fg = p.muted; bg = p.bg; };
     MiniPickPrompt     = { fg = p.brand; bold = true; };
-    MiniPickMatchCur   = { fg = p.brand; bold = true; };
+    MiniPickMatchCurrent = { fg = p.brand; bg = "#55482E"; bold = true; };
+    MiniPickMatchMarked  = { fg = p.accent; bg = "#55482E"; };
+    MiniPickMatchRanges  = { fg = p.brand; };
     MiniStarterHeader  = { fg = p.brand; bold = true; };
     MiniStarterFooter  = { fg = p.muted; italic = true; };
     MiniStarterCurrent = { fg = p.fg;    bg = "#55482E"; };
