@@ -55,8 +55,8 @@ in
 
     # ── Cursor & Visual ────────────────────────────────────────
     Cursor        = { fg = p.bg;       bg = p.fg; };
-    Visual        = { bg = p.selection; };
-    VisualNOS     = { bg = p.selection; };
+    Visual        = { bg = "#3D3529"; };
+    VisualNOS     = { bg = "#3D3529"; };
 
     # ── Search & Match ─────────────────────────────────────────
     Search        = { fg = p.bg;       bg = p.brand; };
@@ -67,14 +67,14 @@ in
 
     # ── Pmenu (completion) ─────────────────────────────────────
     Pmenu         = { fg = p.fg;       bg = p.bgRaised; };
-    PmenuSel      = { fg = p.bright;   bg = p.selection; };
+    PmenuSel      = { fg = p.bright;   bg = "#3D3529"; };
     PmenuSbar     = { bg = p.selection; };
     PmenuThumb    = { bg = p.muted; };
 
     # ── Tabline ────────────────────────────────────────────────
     TabLine       = { fg = p.dim;      bg = p.bgRaised; };
     TabLineFill   = { bg = p.bg; };
-    TabLineSel    = { fg = p.fg;       bg = p.selection; bold = true; };
+    TabLineSel    = { fg = p.fg;       bg = "#3D3529"; bold = true; };
 
     # ── Statusline ─────────────────────────────────────────────
     StatusLine    = { fg = p.dim;      bg = p.bgRaised; };
@@ -231,7 +231,7 @@ in
     TelescopePromptNormal = { fg = p.fg;       bg = p.bgRaised; };
     TelescopePromptBorder = { fg = p.muted;    bg = p.bgRaised; };
     TelescopePromptTitle  = { fg = p.brand;    bg = p.bgRaised; bold = true; };
-    TelescopeSelection    = { bg = p.selection; };
+    TelescopeSelection    = { bg = "#3D3529"; };
     TelescopeMatching     = { fg = p.brand;    bold = true; };
 
     # ── Mini ───────────────────────────────────────────────────
@@ -241,11 +241,11 @@ in
     MiniPickMatchCur   = { fg = p.brand; bold = true; };
     MiniStarterHeader  = { fg = p.brand; bold = true; };
     MiniStarterFooter  = { fg = p.muted; italic = true; };
-    MiniStarterCurrent = { fg = p.fg;    bg = p.selection; };
+    MiniStarterCurrent = { fg = p.fg;    bg = "#3D3529"; };
     MiniStarterItem    = { fg = p.dim; };
     MiniStarterQuery   = { fg = p.brand; bold = true; };
     MiniIndentscopeSymbol = { fg = p.selection; };
-    MiniTablineCurrent    = { fg = p.fg;    bg = p.selection; bold = true; };
+    MiniTablineCurrent    = { fg = p.fg;    bg = "#3D3529"; bold = true; };
     MiniTablineVisible    = { fg = p.dim;   bg = p.bgRaised; };
     MiniTablineHidden     = { fg = p.muted; bg = p.bgRaised; };
     MiniTablineFill       = { bg = p.bg; };
