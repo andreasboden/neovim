@@ -1,4 +1,4 @@
-{ ... }: {
+{ pkgs, ... }: {
 
   plugins.trouble = {
     enable = true;
@@ -106,6 +106,7 @@
     };
     sources.formatting.prettier = {
       enable = true;
+      package = pkgs.prettier;
       disableTsServerFormatter = true;
     };
     sources.formatting.biome = {
